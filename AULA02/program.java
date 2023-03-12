@@ -1,4 +1,4 @@
-package SAPO;
+package AULA02;
 
 public class program {
     public static void main(String[] args) {

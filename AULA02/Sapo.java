@@ -1,6 +1,6 @@
-package SAPO;
+package AULA02;
 
-public class Sapo extends Thread{
+public class Sapo extends Thread {
     // Atributos
     private String nome;
     private double distanciaPercorrida = 0.0;
@@ -36,10 +36,10 @@ public class Sapo extends Thread{
     public void setDistanciaTotal(double distanciaTotal) {
         this.distanciaTotal = distanciaTotal;
     }
-    
+
     // Métodos
     public void run() {
-        while(this.distanciaPercorrida < distanciaTotal) { 
+        while (this.distanciaPercorrida < distanciaTotal) {
             System.out.println(this.nome + " correu " + this.getDistanciaPercorrida() + "cm");
             this.distanciaPercorrida += this.distanciaPulo;
         }
